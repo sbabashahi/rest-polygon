@@ -51,3 +51,6 @@ docs/_build/
 /.vscode
 /venv
 /.DS_Store
+.idea/
+dump.rdb
+env/

@@ -44,7 +44,7 @@ class RegisterWithEmailView(generics.CreateAPIView):
                 else:
                     password = serialized_data.data['password']
                     user = transactions.register_user_with_email_and_password(email, password)
-                    return responses.SuccessResponse().send()
+                    return responses.SuccessResponse(status=201).send()
         except authnz_exceptions.CustomException as e:
             return responses.ErrorResponse(message=e.detail, status=e.status_code).send()
         except exceptions.ValidationError as e:
