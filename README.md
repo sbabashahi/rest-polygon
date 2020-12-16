@@ -1,3 +1,5 @@
+This is a practicing project. I just tried to learn how geo works in django and postgres.
+
 **Initial Postgres DB**
 
 **CREATE DB**
